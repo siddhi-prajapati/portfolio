@@ -1,8 +1,16 @@
-const toggleBtn = document.getElementById('toggleTheme');
-    toggleBtn?.addEventListener('click', () => {
-      document.body.classList.toggle('light-mode');
-      toggleBtn.textContent = document.body.classList.contains('light-mode') ? 'Dark Mode' : 'Light Mode';
-    });
+// AOS scroll animation init
+AOS.init({
+  duration: 1000,
+  once: true,
+});
+
+// Simple contact form submit alert
+// document.getElementById("contact-form").addEventListener("submit", function (e) {
+//   e.preventDefault();
+//   alert("Thank you for contacting! I’ll get back to you soon.");
+//   this.reset();
+// });
+
 
 //  contact form
   const contactForm = document.getElementById("contactForm");
